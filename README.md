@@ -3,7 +3,9 @@
 ## General
 This is a window and layout GUI library extension for python tk. Because tk is inherently bad and unusablew for proper scaling and dynamic layouting, I  added an abstraction layer between the tklib and the user code inside a managed (multithreadable) framework. 
 
-The Main process can create a manager instance which handles all the interior and the user code can specify windows and their layout / content. These windows will contain Views, which specify their underlying tk stuff themselfs and provide a nice and callback-based abstraction layer.
+The Main process can create a manager instance which handles all the interior and the user code can specify windows and their layout / content. These windows will contain Views, which specify their underlying tk stuff themselfs and provide a nice callback-based abstraction layer.
+
+I added some fancy View-Elements which had to do with Git-repository + branch/tag selection and some sticky windows, because these are allways nice to have. I will eventually do more elements like graphs or tables ... :)
 
 
 ## Dependencies

@@ -1,15 +1,4 @@
-# tkguimonster
 
-## General
-This is a window and layout GUI library extension for python tk. Because tk is inherently bad and unusablew for proper scaling and dynamic layouting, I  added an abstraction layer between the tklib and the user code inside a managed (multithreadable) framework. 
-
-The Main process can create a manager instance which handles all the interior and the user code can specify windows and their layout / content. These windows will contain Views, which specify their underlying tk stuff themselfs and provide a nice and callback-based abstraction layer.
-
-## Simple Example (example1.py):
-
-I want to create a Window called ```win1``` and inside that window i want to have 10 Buttons in a ```Vertical``` layout (top to bottom) . Each button gets it's own id (key) and I want all of those buttons to activate my callback function ```self.btnCallback``` when the button is pressed. Inside that function, I check which button was pressed by evaluating the ```sender``` object and doing the things I want to do for each button.
-
-```
 import threading
 import time
 import os
@@ -90,6 +79,3 @@ def main():
 
 if __name__ == '__main__':
 	main()
-
-
-```
